@@ -21,13 +21,13 @@ jobs:
     steps:
       - name: step1 echo hello world
         run: echo hello world!
-      
+
       - name: step2 echo github action
         run: |
-          echo hello world
-          echo github action
+          echo hello world!
+          echo github action!
 
       - name: echo inputs
         run: |
-          echo "NAME: ${{inputs.name}}"
-          echo "ENVIRONMENT: ${{inputs.name}}"
+          echo "NAME: ${{ inputs.name }}"
+          echo "ENVIRONMENT: ${{ inputs.environment }}"
