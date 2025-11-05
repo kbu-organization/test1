@@ -6,7 +6,7 @@ jobs:
   create-output:
     runs-on: ubuntu-latest
     outputs:
-      test: ${{steps.check-out.outputs.test}}
+      test: ${{ steps.check-out.outputs.test }}
 
     steps:
       - name: echo output
@@ -16,7 +16,7 @@ jobs:
 
       - name: check output
         run: |
-          echo ${{steps.check-out.outputs.test}}
+          echo ${{ steps.check-out.outputs.test }}
 
   get-output:
     needs: [create-output]
