@@ -22,10 +22,10 @@ jobs:
         if: endsWith('github actions', 'test')
         run: echo 'test'
       
-      - name: contain act
-        if: contain('github actions', 'act')
+      - name: contains act
+        if: contains('github actions', 'act')
         run: echo 'act'
       
-      - name: contain test
-        if: contain('github actions', 'git')
-        run: echo 'git'
+      - name: contains test
+        if: contains('github actions', 'test')
+        run: echo 'test'
