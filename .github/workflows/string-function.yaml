@@ -11,13 +11,21 @@ jobs:
         run: echo 'git'
       
       - name: startswith test
-        if: startsWith('github actions', 'git')
-        run: echo 'git'
+        if: startsWith('github actions', 'test')
+        run: echo 'test'
       
       - name: endswith ions
-        if: endsWith('github actions', 'git')
-        run: echo 'git'
+        if: endsWith('github actions', 'ions')
+        run: echo 'ions'
       
       - name: endswith test
-        if: endsWith('github actions', 'git')
+        if: endsWith('github actions', 'test')
+        run: echo 'test'
+      
+      - name: contain act
+        if: contain('github actions', 'act')
+        run: echo 'act'
+      
+      - name: contain test
+        if: contain('github actions', 'git')
         run: echo 'git'
